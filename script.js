@@ -3,16 +3,16 @@ if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
 }
 
-// Function to check the user's guess
+//  guessing 
 function checkGuess() {
     const userGuess = parseInt(document.getElementById('userGuess').value, 10);
     const gameResult = document.getElementById('gameResult');
     const discountMessage = document.getElementById('discountMessage');
 
-    // Generate a random number
+    //  random number
     const randomNumber = Math.floor(Math.random() * 10) + 1;
 
-    // Validate input
+    // Validation
     if (isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
         gameResult.textContent = 'Please enter a valid number between 1 and 10.';
         gameResult.style.color = 'yellow';
@@ -20,7 +20,7 @@ function checkGuess() {
         return;
     }
 
-    // Check guess
+    // Check that  guess
     if (userGuess === randomNumber) {
         gameResult.textContent = '🎉 Congratulations! You guessed correctly!';
         gameResult.style.color = 'green';
@@ -32,11 +32,11 @@ function checkGuess() {
         discountMessage.textContent = '';
     }
 
-    // Clear input
+    // Cleaing out input
     document.getElementById('userGuess').value = '';
 }
 
-// Function to toggle between light and dark mode
+// chaning between light and dark mode
 document.getElementById('theme-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 
@@ -54,14 +54,11 @@ const productDetails = document.querySelectorAll('.product-details');
 
 productButtons.forEach(button => {
     button.addEventListener('click', function() {
-        const productId = button.getAttribute('data-product'); // Get the product ID from the button
-
-        // Hide all product details
+        const productId = button.getAttribute('data-product'); 
         productDetails.forEach(product => {
             product.classList.remove('active');
         });
 
-        // Show the clicked product's details
         const selectedProduct = document.getElementById(productId);
         selectedProduct.classList.add('active');
     });
