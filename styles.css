@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+
+    margin: 0;
+    padding: 0;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+/* Header Styles */
+header {
+    background-color: #3e1f47;
+    padding: 15px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #b3c3f3;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* About Us Section */
+#about {
+    background-color: #272640;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: white;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #191970;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    color: white;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #e6e6fa;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Game Section */
+#game {
+    background-color: #272640;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+#game input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    max-width: 250px;
+    font-size: 1em;
+}
+
+#game button {
+    background-color: #e6e6fa;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#game button:hover {
+    background-color: red;
+    color: white;
+}
+
+#game h2 {
+    color: #b3c3f3;
+    margin-bottom: 15px;
+}
+
+#game p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Products Section */
+#products {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-controls {
+    margin-bottom: 20px;
+}
+
+.product-button {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-button:hover {
+    background-color: #555;
+}
+
+.product-details {
+    display: none; /* Hide all product details by default */
+    margin-top: 20px;
+}
+
+.product-details img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.product-details.active {
+    display: block; /* Show the active product */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    height: 40px;
+}

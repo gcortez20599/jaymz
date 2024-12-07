@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myra and Jairo - DJs and Merchandise</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">JAYMZ</div>
+        <button id="theme-toggle">Switch to Dark Mode</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#game">Game</a></li>
+                <li><a href="#products">Our Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Myra and Jairo's DJ World</h1>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="/Users/gissellecortez/Desktop/jymz_dj/jaymz/images/about-image.jpg" alt="Myra and Jairo" class="about-image">
+                <p>Meet Myra and Jairo, a dynamic husband-and-wife duo with a shared passion for house music.</p>
+                <p>Meet Myra and Jairo, a dynamic husband-and-wife duo who have been married for 25 years and spinning beats as DJs throughout Chicago for just as long. With a shared love for house music, they’ve built a reputation for creating unforgettable vibes at events of all kinds—from high-energy public gatherings to intimate private parties.  
+
+                As passionate entertainers, Myra and Jairo bring their unique chemistry and decades of experience to every performance, keeping dance floors alive and audiences engaged. Beyond their DJing, they share their artistry with fans through exclusive merchandise, including stylish t-shirts and USBs filled with their signature mixes.  
+
+                Whether you’re looking for event entertainment or a fresh way to enjoy house music, Myra and Jairo are here to deliver the soundtrack to your unforgettable moments.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea><br>
+
+                <label for="eventType">Type of Event:</label>
+                <select id="eventType" name="eventType" required>
+                    <option value="">Select Event</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="private-party">Private Party</option>
+                    <option value="corporate-event">Corporate Event</option>
+                    <option value="public-event">Public Event</option>
+                </select><br>
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                <label for="contactEmail">Email</label>
+                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                <label for="contactPhone">Phone</label><br>
+
+                <button type="submit">Submit</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+        <section id="game">
+            <h2>Guess the Number and Win a Discount!</h2>
+            <p>Guess a number between 1 and 10 to win a special discount on your next purchase.</p>
+            <label for="userGuess">Enter your guess:</label>
+            <input type="number" id="userGuess" min="1" max="10" aria-label="Enter your guess" required>
+            <button id="guessButton">Submit Guess</button>
+            <p id="gameResult" role="alert" aria-live="polite"></p>
+            <p id="discountMessage" role="alert" aria-live="polite"></p>
+        </section>
+
+        <section id="products">
+    <h2>Our Products</h2>
+
+    <!-- Product Buttons -->
+    <div class="product-controls">
+        <button class="product-button" data-product="product1">Jingle Jam USB</button>
+        <button class="product-button" data-product="product2">DJ T-Shirt</button>
+        <button class="product-button" data-product="product3">Alternative Nation USB</button>
+    </div>
+
+    <!-- Product -->
+    <div class="product-details" id="product1">
+        <h3>Jingle Jam USB</h3>
+        <img src="images/jingle-jam-usb.jpg" alt="Jingle Jam USB" />
+        <p>Price: $25</p>
+        <p>Bring the magic of the holiday season wherever you go with our Holiday Harmony USB, a compact and convenient way to enjoy all your favorite Christmas tunes!</p>
+    </div>
+
+    <div class="product-details" id="product2">
+        <h3>DJ T-Shirt</h3>
+        <img src="images/dj-tshirt.jpg" alt="DJ T-Shirt" />
+        <p>Price: $30</p>
+        <p>Turn up the vibe with our DJ T-Shirt, the perfect gear for music enthusiasts and party-starters alike. Designed with style and comfort in mind!</p>
+    </div>
+
+    <div class="product-details" id="product3">
+        <h3>Alternative Nation USB</h3>
+        <img src="images/alternative-nation-usb.jpg" alt="Alternative Nation USB" />
+        <p>Price: $25</p>
+        <p>Break free from the mainstream with the Alternative USB, your ultimate collection of alternative music hits, perfect for any music lover!</p>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2024 Myra and Jairo. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
